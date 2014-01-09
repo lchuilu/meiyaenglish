@@ -1,0 +1,350 @@
+@charset "utf-8";
+/* common css */
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend { outline: 0; padding: 0; margin: 0; border: 0; text-align:left; font-style:normal;}
+:focus { outline: 0;}
+body { background: #fff;font-family: Arial,SimSun, Helvetica, sans-serif; color:#333; font-size:12px;}
+ol, ul { list-style: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+caption, th, td { font-weight: normal; text-align: left; vertical-align:top; }
+blockquote:before, blockquote:after, q:before, q:after { content: ""; }
+blockquote, q { quotes: "" ""; }
+strong,b,em,i,address,cite{ font-style:normal;}
+
+/* 链接样式 */
+a:link,a:visited{ color:#c9570c; text-decoration:none;}
+a:hover{ color:#d95854; text-decoration:none}
+.OB_floatL{ float:left; display:inline;}
+.OB_floatR{ float:right; display:inline;}
+.OB_clearB{ clear:both;}
+.OB_clearL{ clear:left;}
+.OB_clearR{ clear:right;}
+.OB_clearFix{ display:block;}
+.OB_clearFix:after {content:"."; display:block;visibility:hidden;height:0;clear:both;}
+/* 多数使用于 更多 的中文符号 */
+.OB_cNSymbol{ font-family:SimSun}
+.OB_F16{ font-size:16px;}
+.OB_F14{ font-size:14px;}
+/* 主要模块名 */
+body{background-color: #b4dda3}
+.header,
+.nav_main,
+.main,
+.footer{ clear:both;}
+.conn{ width:1200px; margin:0 auto;position: relative;background-color: #fff}
+.w1k{width: 1000px;margin: 0 auto;position: relative;background-color: #fff}
+.header {background:#fff url(../images/header.jpg) no-repeat center 0;height: 265px;}
+/* lightbox */
+pre,code {
+	background-color: #333;
+	padding: 10px;
+	font: 12px "Courier New", Courier, monospace;
+	width: 460px;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+p.download { text-indent: -99999px; }
+p.download a {
+	display: block;
+	background: url(../images/jquery-lightbox/ico-download.png) no-repeat;
+	width: 135px;
+	height: 140px;
+	position: absolute;
+	top: 260px;
+	left: 20px;
+}
+*html,*body{background-image:url(about:blank);
+background-attachment:fixed;}
+
+/**
+ * Layout structure lightbox-logo
+ *
+ */
+#container {
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: left;
+	width: 750px;
+	position: relative;
+	overflow: hidden;
+}
+#branding h1 { background: url(../images/jquery-lightbox/lightbox-logo.png?version=0.5) no-repeat; 	zoom: 1;}
+#branding h1 a {
+	cursor: default;
+	display: block;
+	height: 208px;
+	text-indent: -99999px;
+	width: 735px;
+}
+#branding span { display: none; }
+#content { margin: -50px 0 0 245px; }
+#footer {
+	border-top: 1px solid #fff;
+	padding: 10px 0;
+	font-size: .8em;
+}
+/* jQuery lightBox plugin - Gallery style */
+#gallery ul { list-style: none; }
+#gallery ul li { display: inline; }
+#gallery ul img {
+	border: 5px solid #3e3e3e;
+	border-width: 5px 5px 20px;
+}
+#gallery ul a:hover img {
+	border: 5px solid #fff;
+	border-width: 5px 5px 20px;
+	color: #fff;
+}
+#gallery ul a:hover { color: #fff; }
+
+/* Style for Usual tabs */
+ul.idTabs { width: 100%; }
+ul.idTabs li { 
+	list-style: none; 
+	float: left; 
+}
+ul.idTabs a {
+  display: block;
+  padding: 6px 10px;
+  text-decoration: none!important;
+  font: 10px Verdana;
+  color: #FFF;
+  background: #333;
+  border-bottom: 1px solid #454545;
+}
+ul.idTabs a:hover {
+  color:#FFF;
+  background:#222;
+}
+ul.idTabs a.selected {
+  color: #fff;
+  font-weight: bold;
+  background-color: #454545;
+  cursor:default;
+}
+div.tab {
+	background-color: #444;
+	clear: both;
+	padding: 20px;
+	*margin-top: -10px;
+}
+#mourao {
+	font-size: 9px;
+	line-height: 1px;
+	color: #666;
+}
+#mourao a { color: #666; }
+/* 首页 */
+.header .conn {background-color: transparent;}
+.header .nav{width: 1000px;margin: 0 auto 0 auto;padding-top: 100px;}
+.header .nav a:link,
+.header .nav a:visited{font-size: 24px;font-family: 'Microsoft Yahei';color: #10006b;margin: 0 70px;}
+.header .nav a:hover,
+.header .nav a.cur{color: #0575d1}
+.index .w1k{padding-bottom: 50px;}
+.index .w1k .video{ float: left;padding: 5px 0 0 5px;}
+.index .w1k .rqa{ float: left;padding:5px 0 0 0;margin:0 0 0 5px;display: inline}
+.index .t1{clear: both;float: none;padding-top: 25px;}
+.index .t2{border: solid 6px #a2267e;color: #a2267e;font-size: 14px;font-family: 'Microsoft YaHei';line-height: 22px;padding: 20px 50px;height: 45px;}
+.index .teacher{width: 1030px;margin: 0 auto; background: url(../images/teacherbg2.jpg) repeat-y 0 0;}
+.index .teacher .c{background: url(../images/teacherbg.jpg) no-repeat center 0;overflow: hidden;padding: 0 0 40px 0}
+.index .teacher .c1,
+.index .teacher .c2,
+.index .teacher .c3,
+.index .teacher .c4{float: left;display: inline;}
+.index .teacher .c1{width: 220px;margin: 171px 0 0 41px;}
+.index .teacher .c2{width: 220px;margin: 98px 0 0 15px;}
+.index .teacher .c3{width: 220px;margin: 98px 0 0 53px;}
+.index .teacher .c4{width: 220px;margin: 168px 0 0 15px;}
+.index .teacher p{line-height: 25px;font-family: '黑体';margin-top: 10px;font-size: 14px;}
+.footer{padding:50px 0;text-align: center;margin: 20px auto}
+.footer img{margin-right: 30px;}
+.footer p{font-size: 20px;text-align: center;margin-bottom: 10px;;color: #333;line-height: 1.78}
+.footer a{color: #333;margin-right: 10px;}
+/* 报名 */
+.baoming{}
+.baoming .studyAbout{padding: 50px 60px 40px 60px;}
+.baoming .download{float: right;vertical-align: top;margin: 0 40px 0 0;display: inline;}
+.baoming .studyAbout h5{font-family: 'Microsoft Yahei';font-size: 18px;color: #3b86c7;line-height: 26px;margin-top: 33px;}
+.baoming .studyAbout .h51{margin: 0}
+.baoming .studyAbout p{font-size: 15px;font-family:'Microsoft Yahei';line-height: 25px;}
+.baoming .studyroad{background: url(../images/studyroad.jpg) no-repeat 0 0 ; width: 901px;height: 458px; clear: both;padding:12px 0 60px 12px;margin: 0 0 0 45px;}
+.baoming .studyroad table{width: 890px;height: 440px;}
+.baoming .studyroad .t1{width: 250px;}
+.baoming .studyroad .t2{width: 330px;}
+.baoming .studyroad td,
+.baoming .studyroad th{height: 85px;font-size: 25px;font-family: 'microsoft Yahei';vertical-align: middle;text-align: center}
+.baoming .studyroad th{height: 110px;}
+.baoming .studyroad td{font-size: 21px;}
+.baoming .studyroad .purchase{vertical-align: middle;}
+/* 目标 */
+.mubiao .nav{width: 1000px;overflow: hidden;margin: 0 auto}
+.mubiao .nav li{float: left;margin:0;width: 200px;height: 60px;line-height: 60px;text-align: center; color: #fff;background: url(../images/mubiaotab-02.jpg) no-repeat 0 0;font-size: 18px;font-family: 'Microsoft Yahei'}
+.mubiao .nav .cur{background-image: url(../images/mubiaotab.jpg);color: #0274cd}
+.mubiao .nav a:link,
+.mubiao .nav a:visited{color: #fff;display: block;width: 200px;height: 60px;text-align: center;}
+.mubiao .nav a:hover{color:#fff}
+.mubiao .nav .cur a:link,
+.mubiao .nav .cur a:visited{color: #0274cd}
+.mubiao .nav .cur a:hover{color:#0274cd}
+.mubiao .img{text-align:center;}
+.mubiao .text {padding: 50px 35px;}
+
+.mubiao .text h3{font-size: 25px;font-family: 'Microsoft Yahei';text-align: center;font-weight: normal;line-height: 42px;}
+.mubiao  h4{font-size: 18px;font-family: 'Microsfot Yahei';text-align: left;color: #0575d1;margin: 20px 0 0 0;line-height: 35px;}
+.mubiao .img1{margin-bottom: 30px;}
+.mubiao .h41{margin: 40px 0 0 35px;}
+.mubiao .p1{margin:  0 35px; line-height: 35px;font-size: 15px;font-family: 'Microsoft Yahei'}
+.mubiao .text p{font-size: 15px;line-height: 1.8;font-family: 'Microsoft Yahei';font-weight:normal;text-indent: 2em}
+.mubiao .text .down{text-align: center;padding: 50px 0 40px 0}
+.mubiao .text .down img{margin: 0 0 0 5px;}
+.mubiao .downv{overflow: hidden;}
+.mubiao .text .video{float: left;}
+.mubiao .text .download{float: left;display: inline;margin: 95px 0 0 65px}
+
+/* 测试 */
+.test {padding: 70px 35px}
+.test h3{font-size: 25px;font-family: 'Microsoft Yahei';text-align: center;font-weight: normal;line-height: 42px;}
+.test h4{font-size: 18px;font-family: 'Microsfot Yahei';text-align: left;color: #0575d1;margin: 20px 0 0 0;line-height: 35px;}
+.test p{font-size: 15px;line-height: 22px;font-family: 'Microsfot Yahei';font-weight:normal;}
+.test .down{text-align: center;}
+.test .down img{margin: 0 0 0 5px;}
+.testpic{padding: 10px 0 0 0}
+.testpic img{float: left; cursor: pointer;margin: 0 8px 10px 1px;}
+
+#indexSc .text{display: none}
+#qqCall{position: fixed;_left:expression(eval(document.documentElement.scrollLeft+document.documentElement.clientWidth-this.offsetWidth+40));_top:expression(eval(document.documentElement.scrollTop+265));top: 265px;right: 40px;}
+
+/* light box */
+#lightbox{
+	position: absolute;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+	text-align: center;
+	line-height: 0;
+	}
+
+#lightbox a img{ border: none; }
+
+#outerImageContainer{
+	position: relative;
+	background-color: #fff;
+	width: 250px;
+	height: 250px;
+	margin: 0 auto;
+	}
+
+#imageContainer{
+	padding: 10px;
+	}
+
+#loading{
+	position: absolute;
+	top: 40%;
+	left: 0%;
+	height: 25%;
+	width: 100%;
+	text-align: center;
+	line-height: 0;
+	}
+#hoverNav{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 10;
+	}
+#imageContainer>#hoverNav{ left: 0;}
+#hoverNav a{ outline: none;}
+
+#prevLink, #nextLink{
+	width: 49%;
+	height: 100%;
+	background: transparent url(../images/blank.gif) no-repeat; /* Trick IE into showing hover */
+	display: block;
+	}
+#prevLink { left: 0; float: left;}
+#nextLink { right: 0; float: right;}
+#prevLink:hover, #prevLink:visited:hover { background: url(../images/prev.gif) left 50% no-repeat; }
+#nextLink:hover, #nextLink:visited:hover { background: url(../images/next.gif) right 50% no-repeat; }
+
+/*** START : next / previous text links ***/
+#nextLinkText, #prevLinkText{
+color: #FF9834;
+font-weight:bold;
+text-decoration: none;
+}
+#nextLinkText{
+padding-left: 20px;
+}
+#prevLinkText{
+padding-right: 20px;
+}
+/*** END : next / previous text links ***/
+/*** START : added padding when navbar is on top ***/
+
+.ontop #imageData {
+    padding-top: 5px;
+}
+
+/*** END : added padding when navbar is on top ***/
+
+#imageDataContainer{
+	font: 10px Verdana, Helvetica, sans-serif;
+	background-color: #fff;
+	margin: 0 auto;
+	line-height: 1.4em;
+	}
+
+#imageData{
+	padding:0 10px;
+	}
+#imageData #imageDetails{ width: 70%; float: left; text-align: left; }	
+#imageData #caption{ font-weight: bold;	}
+#imageData #numberDisplay{ display: block; clear: left; padding-bottom: 1.0em;	}
+#imageData #numberDisplay a { color: black; padding-left: 5px; padding-right: 5px;}
+#imageData #bottomNavClose{ width: 66px; float: right;  padding-bottom: 0.7em;	}
+#imageData #helpDisplay {clear: left; float: left; display: block; }
+
+#overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	width: 100%;
+	height: 500px;
+	background-color: #000;
+	filter:alpha(opacity=60);
+	-moz-opacity: 0.6;
+	opacity: 0.6 !important;
+	display: none;
+	}
+	
+
+.clearfix:after {
+	content: "."; 
+	display: block; 
+	height: 0; 
+	clear: both; 
+	visibility: hidden;
+	}
+
+* html>body .clearfix {
+	display: inline-block; 
+	width: 100%;
+	}
+
+* html .clearfix {
+	/* Hides from IE-mac \*/
+	height: 1%;
+	/* End hide from IE-mac */
+	}	
+
+#lightboxIframe {
+	display: none;
+}
