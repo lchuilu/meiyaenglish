@@ -148,7 +148,7 @@ div.tab {
 .index .w1k .video{ float: left;padding: 5px 0 0 5px;}
 .index .w1k .rqa{ float: left;padding:5px 0 0 0;margin:0 0 0 5px;display: inline}
 .index .t1{clear: both;float: none;padding-top: 25px;}
-.index .t2{border: solid 6px #a2267e;color: #a2267e;font-size: 14px;font-family: 'Microsoft YaHei';line-height: 22px;padding: 20px 50px;height: 45px;}
+.index .t2 .text{font-size: 14px;font-family: 'Microsoft YaHei';line-height: 22px;padding: 20px 50px;height: 45px;}
 .index .teacher{width: 1030px;margin: 0 auto; background: url(../images/teacherbg2.jpg) repeat-y 0 0;}
 .index .teacher .c{background: url(../images/teacherbg.jpg) no-repeat center 0;overflow: hidden;padding: 0 0 40px 0}
 .index .teacher .c1,
@@ -164,6 +164,28 @@ div.tab {
 .footer img{margin-right: 30px;}
 .footer p{font-size: 20px;text-align: center;margin-bottom: 10px;;color: #333;line-height: 1.78}
 .footer a{color: #333;margin-right: 10px;}
+
+
+.index .t1{height: 122px;}
+.index span{float: left;display: inline;background: url(../images/indexs.png) no-repeat 0 0;height: 122px;margin: 0;cursor: pointer;}
+.index .t1 .s1{width: 158px;background-position:0 0}
+.index .t1 .s2{width: 176px; background-position: -158px 0}
+.index .t1 .s3{width: 175px; background-position: -333px 0}
+.index .t1 .s4{width: 172px;background-position: -512px 0}
+.index .t1 .s5{width: 166px;background-position: -683px 0}
+.index .t1 .s6{width: 153px; background-position: -848px 0}
+.index .t1 .s1v{width: 158px;background-position:0 -122px}
+.index .t1 .s2v{width: 176px; background-position: -158px -122px}
+.index .t1 .s3v{width: 175px; background-position: -333px -122px}
+.index .t1 .s4v{width: 172px;background-position: -512px -122px}
+.index .t1 .s5v{width: 166px;background-position: -683px -122px}
+.index .t1 .s6v{width: 153px; background-position: -848px -122px}
+.index .sc1{border: solid 6px #c6222b;color: #c6222b; }
+.index .sc2{border: solid 6px #b6c41c;color: #b6c41c; }
+.index .sc3{border: solid 6px #9f297f;color: #9f297f; }
+.index .sc4{border: solid 6px #dd7e19;color: #dd7e19; }
+.index .sc5{border: solid 6px #1cb4c9;color: #1cb4c9; }
+.index .sc6{border: solid 6px #df5f84;color: #df5f84; }
 /* 报名 */
 .baoming{}
 .baoming .studyAbout{padding: 50px 60px 40px 60px;}
